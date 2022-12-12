@@ -1,0 +1,76 @@
+<!-- Table -->
+<h2 style="color: black;">LISTADO DE MATERIAS</h2>
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Código Materia</th>
+        <th>Nombre Materia</th>
+        <th>Grupo</th>
+        <th>Estudiantes Matriculados</th>
+        <th>Agregar Nuevo Grupo</th>
+        <th>Proyectos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>654654</td>
+        <td>analisis numerico</td>
+        <td>a</td>
+        <td>29</td>
+        <td>
+          <fa-icon [icon]="faPlus"></fa-icon>
+        </td>
+        <td> <a [routerLink]="['/platform/proyectos']" routerLinkActive="active" class="nav-link menu-title">
+            <span>Listado de Proyectos</span>
+          </a></td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>
+        </td>
+        <td> <a [routerLink]="['/platform/proyectos']" routerLinkActive="active" class="nav-link menu-title">
+            <span>Listado de Proyectos</span>
+          </a></td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>
+        </td>
+        <td> <a [routerLink]="['/platform/proyectos']" routerLinkActive="active" class="nav-link menu-title">
+            <span>Listado de Proyectos</span>
+          </a></td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>
+        </td>
+        <td> <a [routerLink]="['/platform/proyectos']" routerLinkActive="active" class="nav-link menu-title">
+            <span>Listado de Proyectos</span>
+          </a></td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>
+        </td>
+        <td> <a [routerLink]="['/platform/proyectos']" routerLinkActive="active" class="nav-link menu-title">
+            <span>Listado de Proyectos</span>
+          </a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<button routerLink="../materia-create" class="button big" routerLinkActive="active">Agregar Materia</button>

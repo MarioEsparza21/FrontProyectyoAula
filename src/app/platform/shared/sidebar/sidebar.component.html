@@ -1,0 +1,37 @@
+<div id="sidebar">
+  <div class="inner">
+    <!-- Menu -->
+    <nav id="menu">
+      <header class="major">
+        <div>
+          <img style="width: 50%;"
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/2048px-User_icon_2.svg.png">
+        </div>
+        <h2>Nombre docente</h2>
+      </header>
+      <ul>
+        <li>
+          <a
+            [routerLink]="['/platform/materia-list']"
+            routerLinkActive="active">
+              <span>Lista de Materias</span>
+            </a>
+        </li>
+        <li><a href="generic.html">Datos Personales</a></li>
+        <li><a href="elements.html">Elementos</a></li>
+        <li>
+          <a
+            [routerLink]="['/auth']"
+            routerLinkActive="active">
+            <span>Cerrar Sesión</span>
+            </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy; Universidad Francisco de Paula Santander <a
+          href="https://uvirtual.cloud.ufps.edu.co/">Uvirtual UFPS</a></p>
+    </footer>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<section
+  class="banner style1 orient-right content-align-center image-position-left 
+  fullscreen onload-image-fade-in onload-content-fade-right">
+  <div class="content">
+    <h2>Formulario de Registro</h2>
+    <section class="wrapper style1 align-center">
+      <div class="">
+        <!-- inner medium-->
+        <form class="theme-form login-form" [formGroup]="miFormulario" (ngSubmit)="login()" >
+          <h4>Iniciar Sesión</h4>
+
+          <div class="form-group">
+            <label>Ingrese su correo</label>
+
+            <div class="input-group"><span class="input-group-text"><i class="icon-email"></i></span>
+              <input class="form-control" 
+              type="email" 
+              placeholder="mario@ufps.edu.co"
+              formControlName="correo">
+            </div>
+          </div>
+          
+          <button class="button big wide smooth-scroll-middle" type="submit">
+            Registrarme
+          </button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="image">
+    <img
+      src="https://caracol.com.co/resizer/pLzuAzhMbIXcOANfciWtuP-z4qs=/768x576/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/ML7AKXWCUNJS3HUYOHT4UY5GHI.jpg"
+      alt="" />
+  </div>

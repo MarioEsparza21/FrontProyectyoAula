@@ -1,0 +1,58 @@
+<!-- Table -->
+<h2 style="color: black;">LISTADO DE PROYECTOS DE MATERIA ASIGNADA</h2>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre de Proyecto</th>
+                <th>Descripción</th>
+                <th>Integrantes</th>
+                <th>Proyecto Asignado</th>
+                <th>Ver mas</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>654654</td>
+                <td>analisis numerico</td>
+                <td>a</td>
+                <td>29</td>
+                <td>
+                    <a [routerLink]="['../proyecto-ver']" routerLinkActive="active">
+                        <span>Proyectos</span>
+                    </a>
+                </td>
+
+                <td><a href="#">ver más</a></td>
+            </tr>
+            <tr>
+                <td>566</td>
+                <td>SO</td>
+                <td>b</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>5785</td>
+                <td>Arqui</td>
+                <td>c</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>654</td>
+                <td>estructuras</td>
+                <td>a</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>5454</td>
+                <td>redes2</td>
+                <td>c</td>
+                <td>28</td>
+            </tr>
+        </tbody>
+    </table>
+    <button routerLink="../proyecto-create" class="button big" routerLinkActive="active">Agregar Proyecto</button>
+    <button routerLink="../materia-list" class="button big" routerLinkActive="active">Regresar</button>
+
+</div>

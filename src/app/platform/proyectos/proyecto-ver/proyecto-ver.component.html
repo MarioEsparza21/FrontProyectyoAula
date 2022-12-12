@@ -1,0 +1,115 @@
+<h2 style="color: black;">INFORMACIÓN DEL PROYECTO</h2>
+<form>
+    <div class="row gtr-uniform">
+        <div class="col-4 col-12-xsmall">
+            <input type="text" name="name" id="name" value="" disabled=»disabled» placeholder="Nombre del proyecto" />
+        </div>
+        <div class="col-4 col-12-xsmall">
+            <input type="text" name="name" id="name" value="" disabled=»disabled» placeholder="Cantidad de Integrantes" />
+        </div>
+        <div class="col-4 col-12-xsmall">
+            <select name="Estado" id="Estado">
+                <option value="">-Estado-</option>
+                <option value="1">Entregado</option>
+                <option value="1">En proceso</option>
+                <option value="1">No entregó</option>
+            </select>
+        </div>
+        <!-- Table -->
+        <div class="table-wrapper">
+            <h3 style="color: black;">GRUPO CONFORMADO POR:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Numero</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>foto2.png</td>
+                        <td>155425</td>
+                        <td>brayan</td>
+                        <td>braian@ufps.edu.co</td>
+                        <td>2454544</td>
+                        <td><input type="button" onclick="insertarFila()" value="Borrar"></td>
+                    </tr>
+                    <tr>
+                        <td>foto3.png</td>
+                        <td>156542</td>
+                        <td>mario</td>
+                        <td>mariobag0@ufps.edu.co</td>
+                        <td>7456132</td>
+                        <td><input type="button" onclick="insertarFila()" value="Borrar"></td>
+                    </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="5"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <h3 style="color: black;">FASES O AVANCES DEL PROYECTO</h3>
+            <br>
+            <!-- Section -->
+            <section>
+                <div class="posts">
+                    <article>
+                        <h3 style="color: black;">AVANCE 3</h3>
+                        <p>Fecha Inicio - Fecha Fin</p>
+                        <select name="Estado" id="Estado">
+                            <option value="">-Estado-</option>
+                            <option value="1">Entregado</option>
+                            <option value="1">En proceso</option>
+                            <option value="1">No entregó</option>
+                        </select>
+                        <ul class="actions">
+                            <li><a href="" download="">Descargar</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3 style="color: black;">AVANCE 3</h3>
+                        <p>Fecha Inicio - Fecha Fin</p>
+                        <select name="Estado" id="Estado">
+                            <option value="">-Estado-</option>
+                            <option value="1">Entregado</option>
+                            <option value="1">En proceso</option>
+                            <option value="1">No entregó</option>
+                        </select>
+                        <ul class="actions">
+                            <li><a href="" download="">Descargar</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3 style="color: black;">AVANCE 3</h3>
+                        <p>Fecha Inicio - Fecha Fin</p>
+                        <select name="Estado" id="Estado">
+                            <option value="">-Estado-</option>
+                            <option value="1">Entregado</option>
+                            <option value="1">En proceso</option>
+                            <option value="1">No entregó</option>
+                        </select>
+                        <ul class="actions">
+                            <li><a href="" download="">Descargar</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <div class="col-12">
+            <ul class="actions">
+                <li>
+                    <button routerLink="../proyectos" class="button big" 
+                    routerLinkActive="active">
+                        Regresar</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</form>

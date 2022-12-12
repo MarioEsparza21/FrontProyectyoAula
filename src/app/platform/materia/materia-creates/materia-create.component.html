@@ -1,0 +1,74 @@
+<!-- Form -->
+<h2 style="color: black;">REGISTRAR MATERIA</h2>
+<h3 style="color: black;">INFORMACIÓN DE LA MATERIA</h3>
+<form>
+	<div class="row gtr-uniform">
+		<div class="col-6 col-12-xsmall">
+			<input type="text" name="name" id="name" value="" placeholder="Nombre Materia" />
+		</div>
+		<div class="col-6 col-12-xsmall">
+			<input type="text" name="number" id="number" value="" placeholder="Codigo Materia" />
+		</div>
+		<div class="col-6 col-12-xsmall">
+			<input type="text" name="name" id="name" value="" placeholder="Cantidad Alumnos" />
+		</div>
+		<div class="col-6 col-12-xsmall">
+			<input type="text" name="number" id="number" value="" placeholder="Grupo" />
+		</div>
+		<div class="col-12">
+			<input type="text" name="number" id="number" value="" placeholder="Correo Institucional" />
+		</div>
+		<div class="col-12">
+			<ul class="actions">
+				<li><button routerLink="../materia-list" class="primary"
+					routerLinkActive="active">Registrar Materia</button>
+				</li>
+				<li>
+                    <button routerLink="../proyectos" class="button big" 
+                    routerLinkActive="active">
+                        Regresar</button>
+                </li>
+			</ul>
+		</div>
+		<div class="col-6 col-12-xsmall">
+			<h3 style="color:black;">Listado de Estudiantes</h3>
+			<p>Sube un archivo excel:
+				<input type="file" name="archivosubido">
+				<input type="submit" value="Subir Archivo">
+			</p>
+		</div>
+		<div class="col-6 col-12-xsmall">
+			<div class="col-6 col-12-xsmall">
+				<h3 style="color:black;">Listado de Proyectos</h3>
+				<p>Sube un archivo excel:
+					<input type="file" name="archivosubido">
+					<input type="submit" value="Subir Archivo">
+				</p>
+			</div>
+		</div>
+
+		<!-- Table -->
+		<div class="table-wrapper">
+			<h3 style="color: black;">NUMERO DE FASES/AVANCES DE LOS PROYECTOS</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Fase</th>
+						<th>Fecha Inicio</th>
+						<th>Fecha Fin</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td><input type="date" id="start" name="trip-start" value="" min="" max=""></td>
+						<td><input type="date" id="start" name="trip-start" value="" min="" max=""></td>
+						<td><input type="button" onclick="insertarFila()" value="Insertar fila"></td>
+						<td><input type="button" onclick="insertarFila()" value="Borrar fila"></td>
+					</tr>
+			</table>
+		</div>
+	</div>
+</form>
